@@ -1,0 +1,17 @@
+Configuration:
+  appenders:
+    Console:
+      name: LogToConsole
+      EcsLayout:
+        serviceName: speech
+  Loggers:
+    logger:
+      - name: com.personal
+        level: debug
+        additivity: false
+        AppenderRef:
+          - ref: LogToConsole
+    Root:
+      level: error
+      AppenderRef:
+        ref: LogToConsole

@@ -1,0 +1,12 @@
+com\personal\service\SpeechService.class
+com\personal\entity\Identifiable.class
+com\personal\controller\SpeechController.class
+com\personal\entity\Speech.class
+com\personal\repository\SpeechRepository.class
+com\personal\service\SpeechServiceImpl.class
+com\personal\entity\Speech_.class
+com\personal\model\SpeechSearch.class
+com\personal\filter\SpeechSpecification.class
+com\personal\model\Speech.class
+com\personal\entity\SpeechGenerator.class
+com\personal\SpeechApplication.class

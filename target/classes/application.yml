@@ -1,0 +1,32 @@
+environment: local
+project: SpeechApp
+
+spring:
+  application:
+    name: speechServices
+  profiles:
+    active: local
+  jpa:
+    properties:
+      hibernate:
+        default_schema: speech
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: "jdbc:postgresql://ec2-54-172-175-251.compute-1.amazonaws.com:5432/d74gnpief5o3j1"
+    username: kqfabuplwmjbxv
+    password: f2950fdd7b7a906ec32be3fc031fffdfa54fc4191a2cc9a90038c62d95d2d933
+  flyway:
+    baseline-on-migrate: true
+    create-schemas: true
+    schemas: speech
+  rest:
+    connection-timeout: 5000
+    read-timeout: 5000
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
